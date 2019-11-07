@@ -1,3 +1,4 @@
+import { EnvUrlPipe } from './helpers/envUrl.pipe';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -15,7 +16,15 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+   imports: [
+      RouterModule.forRoot(routes)
+   ],
+   exports: [
+      RouterModule,
+      EnvUrlPipe
+   ],
+   declarations: [
+     EnvUrlPipe
+   ]
 })
 export class AppRoutingModule { }
