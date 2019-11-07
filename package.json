@@ -1,6 +1,7 @@
 {
   "name": "test-subject",
   "version": "0.0.0",
+  "homepage": "https://spvmastern.github.io/test-subject/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
